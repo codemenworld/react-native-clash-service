@@ -1,10 +1,10 @@
 package com.github.kr328.clash.service.remote
 
 import com.github.kr328.clash.service.model.Profile
-// import com.github.kr328.kaidl.BinderInterface
+import com.github.kr328.kaidl.BinderInterface
 import java.util.*
 
-// @BinderInterface
+@BinderInterface
 interface IProfileManager {
     suspend fun create(type: Profile.Type, name: String, source: String = ""): UUID
     suspend fun clone(uuid: UUID): UUID

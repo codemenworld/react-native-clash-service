@@ -2,9 +2,9 @@ package com.github.kr328.clash.service.remote
 
 import com.github.kr328.clash.core.Clash
 import com.github.kr328.clash.core.model.*
-// import com.github.kr328.kaidl.BinderInterface
+import com.github.kr328.kaidl.BinderInterface
 
-// @BinderInterface
+@BinderInterface
 interface IClashManager {
     fun queryTunnelState(): TunnelState
     fun queryTrafficTotal(): Long

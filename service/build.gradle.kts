@@ -42,6 +42,8 @@ android {
             )
         }
     }
+
+    buildFeatures.dataBinding = true
 }
 
 
@@ -56,7 +58,7 @@ dependencies {
     implementation("com.github.codemenworld:react-native-clash-core:1.0.0")
     implementation("com.github.codemenworld:react-native-clash-common:2c2b543ac5")
 
-    // ksp("com.github.kr328.kaidl:kaidl:$kaidl")
+     ksp("com.github.kr328.kaidl:kaidl:$kaidl")
     ksp("androidx.room:room-compiler:$room")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine")
@@ -64,7 +66,7 @@ dependencies {
     implementation("androidx.core:core-ktx:$coreKtx")
     implementation("androidx.room:room-runtime:$room")
     implementation("androidx.room:room-ktx:$room")
-    // implementation("com.github.kr328.kaidl:kaidl-runtime:$kaidl")
+     implementation("com.github.kr328.kaidl:kaidl-runtime:$kaidl")
     implementation("dev.rikka.rikkax.preference:multiprocess:$multiprocess")
     implementation(platform("com.squareup.okhttp3:okhttp-bom:4.10.0"))
 
